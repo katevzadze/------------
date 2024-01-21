@@ -30,6 +30,11 @@ a:hover, a:focus {
     text-decoration: none;
     outline: 0;
 }
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .logo {
     display: inline-flex;
     padding: 2px 9px;
@@ -91,7 +96,7 @@ h2 {
    line-height: 42px;
    margin-bottom: 75px;
 }
-   
+
 .btn-light {
    width: 446px;
    height: 100px;
@@ -117,6 +122,10 @@ button.btn.btn-light {
    border-bottom: none;
    padding: 0 0;
    margin-right: 30px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-left: 79px;
 }
 
 .modal-header .btn-close {
@@ -125,6 +134,11 @@ button.btn.btn-light {
 
 .modal-body {
     padding: 0 0;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 h4 {
@@ -238,12 +252,9 @@ p {
 }
     
 .accordion-item {
-    background-color: #FFF6EF;
+    background-color: #FFF;
 }
-.accordion-item:first-of-type {
-    border: none;
-}
-    
+  
 .accordion-content {
     margin: 0 auto;
     margin-top: 92px;  
@@ -259,11 +270,15 @@ p {
 }
 
 .accordion-item:first-of-type .accordion-button {
-    border-radius: 20px 20px 0px 0px;
     box-shadow: none;
+    border-radius: 20px 20px 0px 0px;
     
-}
+}   
+.accordion-item:last-of-type  {
+    box-shadow: none;
+    border-radius: 20px 20px 20px 20px;
     
+}   
 .footer-section {
     display: flex;
     text-align: center;
